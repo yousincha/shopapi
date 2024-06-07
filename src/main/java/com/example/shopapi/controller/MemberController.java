@@ -26,6 +26,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Validated
 @RequestMapping("/members")
+@CrossOrigin(origins = "http://localhost:3000")
 public class MemberController {
 
     private final JwtTokenizer jwtTokenizer;
