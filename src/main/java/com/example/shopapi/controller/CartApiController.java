@@ -5,9 +5,11 @@ import com.example.shopapi.security.jwt.util.IfLogin;
 import com.example.shopapi.security.jwt.util.LoginUserDto;
 import com.example.shopapi.service.CartService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @RestController
 @RequestMapping("/carts") // http://localhost:8080/carts
@@ -24,6 +26,10 @@ public class CartApiController {
         Cart cart = cartService.addCart(loginUserDto.getMemberId(), date);
         return cart;
     }
-
+    @GetMapping // Changed to GET method for fetching cart data
+    public ResponseEntity<List<Cart>> getCart(@RequestParam Long memberId) {
+        List<Cart> carts = cartService.getCartByMemberId(memberId);
+        return ResponseEntity.ok(carts);
+    }
 
 }

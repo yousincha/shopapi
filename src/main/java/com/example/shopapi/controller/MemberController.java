@@ -11,6 +11,8 @@ import com.example.shopapi.service.MemberService;
 import com.example.shopapi.service.RefreshTokenService;
 import io.jsonwebtoken.Claims;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.*;
 
 import jakarta.validation.Valid;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
@@ -28,18 +31,12 @@ import java.util.stream.Collectors;
 @RequestMapping("/members")
 @CrossOrigin(origins = "http://localhost:3000")
 public class MemberController {
+    private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 
     private final JwtTokenizer jwtTokenizer;
     private final MemberService memberService;
     private final RefreshTokenService refreshTokenService;
     private final PasswordEncoder passwordEncoder;
-
-//    public MemberController(JwtTokenizer jwtTokenizer, MemberService memberService, RefreshTokenService refreshTokenService, PasswordEncoder passwordEncoder) {
-//        this.jwtTokenizer = jwtTokenizer;
-//        this.memberService = memberService;
-//        this.refreshTokenService = refreshTokenService;
-//        this.passwordEncoder = passwordEncoder;
-//    }
 
     @PostMapping("/signup")
     public ResponseEntity signup(@RequestBody @Valid MemberSignupDto memberSignupDto, BindingResult bindingResult) {
@@ -140,5 +137,74 @@ public class MemberController {
         Member member = memberService.findByEmail(loginUserDto.getEmail());
         return new ResponseEntity(member, HttpStatus.OK);
     }
+    @PostMapping("/findpassword")
+    public ResponseEntity<String> findPassword(@RequestBody @Valid PasswordResetRequestDto passwordResetRequestDto, BindingResult bindingResult) {
+        logger.info("Handling findpassword request for email: " + passwordResetRequestDto.getEmail());
 
+        if (bindingResult.hasErrors()) {
+            logger.error("Validation errors: " + bindingResult.getAllErrors());
+            return new ResponseEntity<>("Validation errors: " + bindingResult.getAllErrors(), HttpStatus.BAD_REQUEST);
+        }
+
+        try {
+            memberService.sendPasswordResetLink(passwordResetRequestDto.getEmail());
+            logger.info("Password reset link sent successfully to: {}", passwordResetRequestDto.getEmail());
+
+            return ResponseEntity.ok("이메일을 전송했습니다. 이메일을 확인하세요."); // 클라이언트에게 반환할 메시지
+        } catch (IllegalArgumentException e) {
+            logger.error("User not found: " + e.getMessage(), e);
+            return new ResponseEntity<>("User not found: " + e.getMessage(), HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            logger.error("Error occurred: " + e.getMessage(), e);
+            return new ResponseEntity<>("Error occurred: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping("/resetpassword")
+    public ResponseEntity<String> resetPassword(@RequestBody @Valid PasswordResetDto passwordResetDto) {
+        try {
+            System.out.println("Received reset password request for resetToken: " + passwordResetDto.getResetToken());
+            System.out.println("New password: " + passwordResetDto.getNewPassword());
+            // 비밀번호 리셋 토큰을 사용하여 회원을 찾음
+            Member member = memberService.findByResetToken(passwordResetDto.getResetToken())
+                    .orElseThrow(() -> new IllegalArgumentException("유저 또는 토큰이 만료 되었습니다."));
+
+            // 새 비밀번호를 암호화하여 저장
+            String encryptedPassword = passwordEncoder.encode(passwordResetDto.getNewPassword());
+            member.setPassword(encryptedPassword);
+
+            // 리셋 토큰 관련 필드 초기화
+            member.setResetToken(null);
+            member.setResetTokenCreationTime(null);
+
+            // 회원 정보 업데이트
+            memberService.updateMember(member);
+
+            return ResponseEntity.ok("비밀번호가 성공적으로 재설정되었습니다.");
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body("유저 또는 토큰이 만료 되었습니다.");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("비밀번호 재설정 중 오류 발생: " + e.getMessage());
+        }
+    }
+
+
+    @GetMapping("/resettoken")
+    public ResponseEntity<String> checkResetTokenValidity(@RequestParam String resetToken) {
+        if (isValidResetToken(resetToken)) {
+            return ResponseEntity.ok("Reset token is valid");
+        } else {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body("Reset token is invalid or expired");
+        }
+    }
+
+
+    private boolean isValidResetToken(String resetToken) {
+        Optional<Member> memberOptional = memberService.findByResetToken(resetToken);
+        // 실제 구현에서는 토큰의 유효성을 데이터베이스에서 확인해야 합니다.
+        return memberOptional.isPresent();
+    }
 }

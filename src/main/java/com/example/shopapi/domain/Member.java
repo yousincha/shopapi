@@ -47,6 +47,12 @@ public class Member {
     @Column(length = 10, nullable = false)
     private String gender;
 
+    @Column(name = "reset_token")
+    private String resetToken;
+
+    @Column(name = "reset_token_creation_time")
+    private LocalDateTime resetTokenCreationTime;
+
     @ManyToMany
     @JoinTable(name = "member_role",
             joinColumns = @JoinColumn(name = "member_id"),
@@ -66,6 +72,7 @@ public class Member {
                 ", birthMonth=" + birthMonth +
                 ", birthDay=" + birthDay +
                 ", gender='" + gender + '\'' +
+                ", resetToken='" + resetToken + '\'' +
                 '}';
     }
 
@@ -73,5 +80,3 @@ public class Member {
         roles.add(role);
     }
 }
-
-// User -----> Role

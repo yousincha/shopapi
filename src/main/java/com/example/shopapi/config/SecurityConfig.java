@@ -38,8 +38,8 @@ public class SecurityConfig {
                 .httpBasic(httpSecurityHttpBasicConfigurer -> httpSecurityHttpBasicConfigurer.disable())
                 .authorizeHttpRequests(httpRequests -> httpRequests
                         .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
-                        .requestMatchers( "/members/signup", "/members/login", "/members/refreshToken").permitAll()
-                        .requestMatchers(GET, "/categories/**", "/products/**").permitAll()
+                        .requestMatchers( "/members/signup", "/members/login", "/members/refreshToken","/members/findpassword","/members/resetpassword","/members/resettoken").permitAll()
+                        .requestMatchers(GET, "/categories/**", "/products/**","/products2/**","/carts/**","/cartItems/**").permitAll()
                         .requestMatchers(GET,"/**").hasAnyRole( "USER")
                         .requestMatchers(POST,"/**").hasAnyRole("USER", "ADMIN")
                         .anyRequest().hasAnyRole("USER", "ADMIN"))
@@ -53,13 +53,14 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        // config.setAllowCredentials(true); // 이거 빼면 된다
+
+        config.setAllowCredentials(true); // 이거 빼면 된다
 
         config.addAllowedOrigin("http://localhost:3000");
         config.addAllowedHeader("Content-Type");
         config.addAllowedHeader("Authorization");
 
-        config.addAllowedOrigin("*");
+//        config.addAllowedOrigin("*");
         config.addAllowedMethod("*");
         config.setAllowedMethods(List.of("GET","POST","DELETE","PATCH","OPTION","PUT"));
         source.registerCorsConfiguration("/**", config);

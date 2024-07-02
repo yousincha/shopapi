@@ -5,6 +5,7 @@ import com.example.shopapi.repository.CartRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -22,5 +23,10 @@ public class CartService {
         } else {
             return cart.get();
         }
+    }
+
+    public List<Cart> getCartByMemberId(Long memberId) {
+        // Implement logic to fetch cart data from repository based on memberId
+        return cartRepository.findByMemberId(memberId);
     }
 }
