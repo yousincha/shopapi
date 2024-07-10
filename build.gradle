@@ -19,6 +19,12 @@ repositories {
     maven { url 'https://repo.spring.io/milestone' }
     maven { url 'https://repo.spring.io/snapshot' }
 }
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
 
 dependencies {
     // jpa & mysql
@@ -45,12 +51,16 @@ dependencies {
     // SLF4J 및 Logback 설정
     implementation 'org.springframework.boot:spring-boot-starter-logging'
 
-
     // dto validation
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
     // email
     implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // 아임포트 결제 검증 관련 의존성
+    implementation 'com.github.iamport:iamport-rest-client-java:0.2.21'
 }
 
 tasks.named('test') {

@@ -39,7 +39,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(httpRequests -> httpRequests
                         .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
                         .requestMatchers( "/members/signup", "/members/login", "/members/refreshToken","/members/findpassword","/members/resetpassword","/members/resettoken").permitAll()
-                        .requestMatchers(GET, "/categories/**", "/products/**","/products2/**","/carts/**","/cartItems/**").permitAll()
+                        .requestMatchers(GET, "/categories/**", "/products/**","/products2/**","/carts/**","/cartItems/**","/paymentInfos/**").permitAll()
                         .requestMatchers(GET,"/**").hasAnyRole( "USER")
                         .requestMatchers(POST,"/**").hasAnyRole("USER", "ADMIN")
                         .anyRequest().hasAnyRole("USER", "ADMIN"))
@@ -59,6 +59,7 @@ public class SecurityConfig {
         config.addAllowedOrigin("http://localhost:3000");
         config.addAllowedHeader("Content-Type");
         config.addAllowedHeader("Authorization");
+        config.addAllowedHeader("x-refresh-token"); // 추가된 부분
 
 //        config.addAllowedOrigin("*");
         config.addAllowedMethod("*");
