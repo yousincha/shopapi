@@ -55,6 +55,14 @@ public class CartItemService {
     }
 
     @Transactional
+    public void updateCartItemQuantity(Long itemId, int newQuantity) {
+        CartItem cartItem = cartItemRepository.findById(itemId)
+                .orElseThrow(() -> new RuntimeException("CartItem not found with id: " + itemId));
+
+        cartItem.setQuantity(newQuantity);
+        cartItemRepository.save(cartItem);
+    }
+    @Transactional
     public void deleteCartItem(Long memberId, Long cartItemId) {
         cartItemRepository.deleteByCart_memberIdAndId(memberId, cartItemId);
     }
@@ -67,5 +75,11 @@ public class CartItemService {
     @Transactional(readOnly = true)
     public List<CartItem> getCartItems(Long memberId) {
         return cartItemRepository.findByCart_memberId(memberId);
+    }
+
+    @Transactional
+    public void cancelCartItem(Long memberId, Long itemId) {
+        cartItemRepository.deleteByCart_MemberIdAndId(memberId, itemId);
+
     }
 }
