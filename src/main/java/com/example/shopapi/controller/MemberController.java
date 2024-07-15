@@ -103,11 +103,6 @@ public class MemberController {
         return new ResponseEntity(HttpStatus.OK);
     }
 
-    /*
-    1. 전달받은 유저의 아이디로 유저가 존재하는지 확인한다.
-    2. RefreshToken이 유효한지 체크한다.
-    3. AccessToken을 발급하여 기존 RefreshToken과 함께 응답한다.
-     */
     @PostMapping("/refreshToken")
     public ResponseEntity requestRefresh(@RequestBody RefreshTokenDto refreshTokenDto) {
         RefreshToken refreshToken = refreshTokenService.findRefreshToken(refreshTokenDto.getRefreshToken()).orElseThrow(() -> new IllegalArgumentException("Refresh token not found"));
@@ -202,6 +197,20 @@ public class MemberController {
     }
 
 
+    @PutMapping("/update/{id}")
+    public ResponseEntity updateMember(@PathVariable Long id, @RequestBody @Valid MemberUpdateDto memberUpdateDto, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        try {
+            Member updatedMember = memberService.updateMember(id, memberUpdateDto);
+            return new ResponseEntity<>(updatedMember, HttpStatus.OK);
+        } catch (IllegalArgumentException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
     private boolean isValidResetToken(String resetToken) {
         Optional<Member> memberOptional = memberService.findByResetToken(resetToken);
         // 실제 구현에서는 토큰의 유효성을 데이터베이스에서 확인해야 합니다.

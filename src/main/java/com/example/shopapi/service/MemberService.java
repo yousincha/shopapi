@@ -1,5 +1,6 @@
 package com.example.shopapi.service;
 
+import com.example.shopapi.dto.MemberUpdateDto;
 import com.sun.tools.jconsole.JConsoleContext;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -102,4 +103,18 @@ public class MemberService {
     public Member updateMember(Member member) {
         return memberRepository.save(member);
     }
+
+    @Transactional
+    public Member updateMember(Long memberId, MemberUpdateDto memberUpdateDto) {
+        Member member = memberRepository.findById(memberId)
+                .orElseThrow(() -> new IllegalArgumentException("해당 회원을 찾을 수 없습니다."));
+        member.setName(memberUpdateDto.getName());
+        member.setEmail(memberUpdateDto.getEmail());
+        member.setBirthYear(Integer.parseInt(memberUpdateDto.getBirthYear()));
+        member.setBirthMonth(Integer.parseInt(memberUpdateDto.getBirthMonth()));
+        member.setBirthDay(Integer.parseInt(memberUpdateDto.getBirthDay()));
+        member.setGender(memberUpdateDto.getGender());
+        return memberRepository.save(member);
+    }
+
 }
