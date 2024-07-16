@@ -39,7 +39,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(httpRequests -> httpRequests
                         .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
                         .requestMatchers( "/members/signup", "/members/login", "/members/refreshToken","/members/findpassword","/members/resetpassword","/members/resettoken").permitAll()
-                        .requestMatchers(GET, "/categories/**", "/products/**","/products2/**","/carts/**","/cartItems/**","/paymentInfos/**").permitAll()
+                        .requestMatchers(GET, "/categories/**", "/products/**","/products2/**","/carts/**","/cartItems/**","/paymentInfos/**","/saveAddress/**").permitAll()
                         .requestMatchers(GET,"/**").hasAnyRole( "USER")
                         .requestMatchers(POST,"/**").hasAnyRole("USER", "ADMIN")
                         .anyRequest().hasAnyRole("USER", "ADMIN"))
