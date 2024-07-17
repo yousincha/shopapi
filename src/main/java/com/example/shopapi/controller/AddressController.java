@@ -7,8 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("/saveAddress")
+@RequestMapping("/addresses")
 public class AddressController {
 
     private final AddressRepository addressRepository;
@@ -25,6 +27,16 @@ public class AddressController {
             return ResponseEntity.ok("주소가 성공적으로 저장되었습니다.");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("주소 저장 중 오류가 발생했습니다.");
+        }
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Address>> getAddressList() {
+        try {
+            List<Address> addresses = addressRepository.findAll();
+            return ResponseEntity.ok(addresses);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
 }
