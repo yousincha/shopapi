@@ -12,6 +12,7 @@ import lombok.Setter;
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
     private Long id;
 
     @Setter
@@ -33,13 +34,23 @@ public class Address {
     public Address() {
     }
 
-    public Address(Long memberId, String recipientName, String recipientPhone, String postalCode, String address) {
+    public Address(Long id, Long memberId, String recipientName, String recipientPhone, String postalCode, String address) {
+        this.id = id;
         this.memberId = memberId;
         this.recipientName = recipientName;
         this.recipientPhone = recipientPhone;
         this.postalCode = postalCode;
         this.address = address;
     }
+    @Override
+    public String toString() {
+        return "Address{" +
+                "id=" + id +
+                ", postalCode='" + postalCode + '\'' +
+                ", address='" + address + '\'' +
+                ", recipientName='" + recipientName + '\'' +
+                ", recipientPhone='" + recipientPhone + '\'' +
+                '}';
+    }
 
-    // getter, setter
 }

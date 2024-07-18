@@ -2,6 +2,8 @@ package com.example.shopapi.controller;
 
 import com.example.shopapi.domain.Address;
 import com.example.shopapi.repository.AddressRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/addresses")
 public class AddressController {
+    private static final Logger logger = LoggerFactory.getLogger(AddressController.class);
 
     private final AddressRepository addressRepository;
 
@@ -34,9 +37,19 @@ public class AddressController {
     public ResponseEntity<List<Address>> getAddressList() {
         try {
             List<Address> addresses = addressRepository.findAll();
+            logger.info("Fetched addresses: {}", addresses); // 로그 추가
             return ResponseEntity.ok(addresses);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteAddress(@PathVariable Long id) {
+        try {
+            addressRepository.deleteById(id);
+            return ResponseEntity.ok("주소가 삭제되었습니다.");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("주소 삭제 중 오류가 발생했습니다.");
         }
     }
 }
