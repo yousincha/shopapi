@@ -28,4 +28,17 @@ public class AddressService {
     public void deleteAddress(Long id) {
         addressRepository.deleteById(id);
     }
+    public Address updateAddress(Long id, Address updatedAddress) {
+        Optional<Address> optionalAddress = addressRepository.findById(id);
+        if (optionalAddress.isPresent()) {
+            Address existingAddress = optionalAddress.get();
+            existingAddress.setRecipientName(updatedAddress.getRecipientName());
+            existingAddress.setRecipientPhone(updatedAddress.getRecipientPhone());
+            existingAddress.setPostalCode(updatedAddress.getPostalCode());
+            existingAddress.setAddress(updatedAddress.getAddress());
+            return addressRepository.save(existingAddress);
+        } else {
+            throw new IllegalArgumentException("주소가 존재하지 않습니다: " + id);
+        }
+    }
 }

@@ -43,6 +43,26 @@ public class AddressController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
+    @PutMapping("/{id}")
+    public ResponseEntity<String> updateAddress(@PathVariable Long id, @RequestBody Address updatedAddress) {
+        try {
+            Address existingAddress = addressRepository.findById(id)
+                    .orElseThrow(() -> new IllegalArgumentException("주소가 존재하지 않습니다: " + id));
+
+            existingAddress.setRecipientName(updatedAddress.getRecipientName());
+            existingAddress.setRecipientPhone(updatedAddress.getRecipientPhone());
+            existingAddress.setPostalCode(updatedAddress.getPostalCode());
+            existingAddress.setAddress(updatedAddress.getAddress());
+
+            addressRepository.save(existingAddress);
+
+            return ResponseEntity.ok("주소가 성공적으로 업데이트되었습니다.");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("주소 업데이트 중 오류가 발생했습니다.");
+        }
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteAddress(@PathVariable Long id) {
         try {
