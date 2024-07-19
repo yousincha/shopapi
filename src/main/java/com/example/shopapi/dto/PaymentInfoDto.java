@@ -22,8 +22,8 @@ public class PaymentInfoDto {
 
     private String name;
 
-    @JsonProperty("buyer_email")
-    private String buyerEmail;
+//    @JsonProperty("buyer_email")
+//    private String buyerEmail;
 
     @JsonProperty("buyer_name")
     private String buyerName;
@@ -45,7 +45,7 @@ public class PaymentInfoDto {
                 ", payMethod='" + payMethod + '\'' +
                 ", merchantUid='" + merchantUid + '\'' +
                 ", name='" + name + '\'' +
-                ", buyerEmail='" + buyerEmail + '\'' +
+//                ", buyerEmail='" + buyerEmail + '\'' +
                 ", buyerName='" + buyerName + '\'' +
                 ", buyerTel='" + buyerTel + '\'' +
                 ", buyerAddr='" + buyerAddr + '\'' +

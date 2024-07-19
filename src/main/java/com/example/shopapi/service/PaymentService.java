@@ -39,7 +39,7 @@ public class PaymentService {
             paymentInfo.setPayMethod(requestData.get("pay_method") != null ? requestData.get("pay_method").toString() : null);
             paymentInfo.setMerchantUid(requestData.get("merchant_uid") != null ? requestData.get("merchant_uid").toString() : null);
             paymentInfo.setName(requestData.get("name") != null ? requestData.get("name").toString() : null);
-            paymentInfo.setBuyerEmail(requestData.get("buyer_email") != null ? requestData.get("buyer_email").toString() : null);
+//            paymentInfo.setBuyerEmail(requestData.get("buyer_email") != null ? requestData.get("buyer_email").toString() : null);
             paymentInfo.setBuyerName(requestData.get("buyer_name") != null ? requestData.get("buyer_name").toString() : null);
             paymentInfo.setBuyerTel(requestData.get("buyer_tel") != null ? requestData.get("buyer_tel").toString() : null);
             paymentInfo.setBuyerAddr(requestData.get("buyer_addr") != null ? requestData.get("buyer_addr").toString() : null);

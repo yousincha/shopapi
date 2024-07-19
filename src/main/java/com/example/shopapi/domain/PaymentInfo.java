@@ -19,8 +19,8 @@ public class PaymentInfo {
     @Column(name = "imp_uid")
     private String impUid;
 
-    @Column(name = "amount")
-    private Long amount;
+//    @Column(name = "amount")
+//    private Long amount;
 
     @JsonProperty("paid_amount")
     @Column(name = "paid_amount")
@@ -32,11 +32,11 @@ public class PaymentInfo {
     @Column(name = "merchant_uid")
     private String merchantUid;
 
-    @Column(name = "name")
+    @Column(name = "product_name")
     private String name;
 
-    @Column(name = "buyer_email")
-    private String buyerEmail;
+//    @Column(name = "buyer_email")
+//    private String buyerEmail;
 
     @Column(name = "buyer_name")
     private String buyerName;
@@ -55,12 +55,12 @@ public class PaymentInfo {
         return "PaymentInfo{" +
                 "id=" + id +
                 ", impUid='" + impUid + '\'' +
-                ", amount=" + amount +
+//                ", amount=" + amount +
                 ", paidAmount=" + paidAmount +
                 ", payMethod='" + payMethod + '\'' +
                 ", merchantUid='" + merchantUid + '\'' +
-                ", name='" + name + '\'' +
-                ", buyerEmail='" + buyerEmail + '\'' +
+                ", product_name='" + name + '\'' +
+//                ", buyerEmail='" + buyerEmail + '\'' +
                 ", buyerName='" + buyerName + '\'' +
                 ", buyerTel='" + buyerTel + '\'' +
                 ", buyerAddr='" + buyerAddr + '\'' +
