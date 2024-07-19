@@ -44,7 +44,7 @@ public class PaymentInfoDto {
                 ", paidAmount=" + paidAmount +
                 ", payMethod='" + payMethod + '\'' +
                 ", merchantUid='" + merchantUid + '\'' +
-                ", name='" + name + '\'' +
+                ", product_name='" + name + '\'' +
 //                ", buyerEmail='" + buyerEmail + '\'' +
                 ", buyerName='" + buyerName + '\'' +
                 ", buyerTel='" + buyerTel + '\'' +

@@ -12834,3 +12834,826 @@ org.springframework.security.authentication.BadCredentialsException: throw new e
 2024-07-18 14:56:36 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}]
 2024-07-18 14:56:36 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}]
 2024-07-18 14:56:54 [http-nio-8080-exec-10] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:27:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-18 15:27:30 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 26980 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-18 15:27:30 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-18 15:27:30 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-18 15:27:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-18 15:27:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-18 15:27:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18 15:27:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 154 ms. Found 9 JPA repository interfaces.
+2024-07-18 15:27:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-18 15:27:33 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-18 15:27:33 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-18 15:27:33 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-18 15:27:33 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-18 15:27:33 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2659 ms
+2024-07-18 15:27:33 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18 15:27:33 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-18 15:27:33 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-18 15:27:34 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-18 15:27:34 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18 15:27:34 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-18 15:27:34 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40e66462
+2024-07-18 15:27:34 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-18 15:27:34 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-18 15:27:35 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-18 15:27:36 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-18 15:27:36 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18 15:27:37 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-18 15:27:37 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66e2703f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@230862e9, org.springframework.security.web.context.SecurityContextHolderFilter@61acb9d9, org.springframework.security.web.header.HeaderWriterFilter@27668a57, org.springframework.web.filter.CorsFilter@39e1c9c5, org.springframework.security.web.authentication.logout.LogoutFilter@5c1e51d8, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@22ed1e37, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76f8eb4b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78ce53a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@577be1dd, org.springframework.security.web.session.SessionManagementFilter@d57fd7f, org.springframework.security.web.access.ExceptionTranslationFilter@6095e23e, org.springframework.security.web.access.intercept.AuthorizationFilter@7d332d10]
+2024-07-18 15:27:37 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-18 15:27:37 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-18 15:27:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-18 15:27:37 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.434 seconds (process running for 8.335)
+2024-07-18 15:27:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-18 15:27:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-18 15:27:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-18 15:27:39 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:27:39 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:27:45 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:27:45 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:33:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-18 15:33:01 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 31664 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-18 15:33:01 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-18 15:33:01 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-18 15:33:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-18 15:33:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-18 15:33:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18 15:33:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 9 JPA repository interfaces.
+2024-07-18 15:33:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-18 15:33:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-18 15:33:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-18 15:33:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-18 15:33:04 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-18 15:33:04 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2482 ms
+2024-07-18 15:33:04 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18 15:33:04 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-18 15:33:04 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-18 15:33:04 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-18 15:33:04 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18 15:33:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-18 15:33:05 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e6396f4
+2024-07-18 15:33:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-18 15:33:05 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-18 15:33:05 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-18 15:33:06 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-18 15:33:07 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18 15:33:07 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-18 15:33:08 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ea815f6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4289f993, org.springframework.security.web.context.SecurityContextHolderFilter@6a063d4c, org.springframework.security.web.header.HeaderWriterFilter@45cc401d, org.springframework.web.filter.CorsFilter@725366dc, org.springframework.security.web.authentication.logout.LogoutFilter@39e1c9c5, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@24fe3a7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70b00b59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ba26772, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a379cb6, org.springframework.security.web.session.SessionManagementFilter@878b785, org.springframework.security.web.access.ExceptionTranslationFilter@68a387f0, org.springframework.security.web.access.intercept.AuthorizationFilter@2c2840fa]
+2024-07-18 15:33:08 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-18 15:33:08 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-18 15:33:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-18 15:33:08 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.523 seconds (process running for 8.211)
+2024-07-18 15:33:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-18 15:33:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-18 15:33:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-18 15:33:20 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:33:20 [http-nio-8080-exec-10] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:39:31 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:39:31 [http-nio-8080-exec-10] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:39:31 [http-nio-8080-exec-3] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:39:32 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:42:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-18 15:42:06 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 39364 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-18 15:42:06 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-18 15:42:06 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-18 15:42:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-18 15:42:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-18 15:42:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18 15:42:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 9 JPA repository interfaces.
+2024-07-18 15:42:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-18 15:42:08 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-18 15:42:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-18 15:42:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-18 15:42:08 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-18 15:42:08 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2077 ms
+2024-07-18 15:42:08 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18 15:42:08 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-18 15:42:08 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-18 15:42:09 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-18 15:42:09 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18 15:42:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-18 15:42:09 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49782e38
+2024-07-18 15:42:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-18 15:42:09 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-18 15:42:10 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-18 15:42:10 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-18 15:42:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18 15:42:11 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-18 15:42:12 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53221ea8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ec287dd, org.springframework.security.web.context.SecurityContextHolderFilter@2e8c46c1, org.springframework.security.web.header.HeaderWriterFilter@2fdf65e, org.springframework.web.filter.CorsFilter@63e7f11f, org.springframework.security.web.authentication.logout.LogoutFilter@619ec7cc, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@216c2775, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5271862d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5120b85a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62f8aaae, org.springframework.security.web.session.SessionManagementFilter@74ce9774, org.springframework.security.web.access.ExceptionTranslationFilter@5eae717b, org.springframework.security.web.access.intercept.AuthorizationFilter@41726567]
+2024-07-18 15:42:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-18 15:42:12 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-18 15:42:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-18 15:42:12 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 6.699 seconds (process running for 7.483)
+2024-07-18 15:42:12 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-18 15:42:12 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-18 15:42:12 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-18 15:42:30 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:42:30 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:43:09 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-18 15:43:09 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 26552 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-18 15:43:09 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-18 15:43:09 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-18 15:43:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-18 15:43:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-18 15:43:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18 15:43:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 9 JPA repository interfaces.
+2024-07-18 15:43:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-18 15:43:11 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-18 15:43:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-18 15:43:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-18 15:43:11 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-18 15:43:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2123 ms
+2024-07-18 15:43:11 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18 15:43:11 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-18 15:43:11 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-18 15:43:11 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-18 15:43:12 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18 15:43:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-18 15:43:12 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e6396f4
+2024-07-18 15:43:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-18 15:43:12 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-18 15:43:13 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-18 15:43:14 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-18 15:43:14 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18 15:43:15 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-18 15:43:15 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ed56bb0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76e6792b, org.springframework.security.web.context.SecurityContextHolderFilter@421c7310, org.springframework.security.web.header.HeaderWriterFilter@21f76ce1, org.springframework.web.filter.CorsFilter@20d75491, org.springframework.security.web.authentication.logout.LogoutFilter@278f7b16, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@63ef1f19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53aeda2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4009d63b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66e2703f, org.springframework.security.web.session.SessionManagementFilter@6095e23e, org.springframework.security.web.access.ExceptionTranslationFilter@f9c7513, org.springframework.security.web.access.intercept.AuthorizationFilter@6badf918]
+2024-07-18 15:43:16 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-18 15:43:16 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-18 15:43:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-18 15:43:16 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.228 seconds (process running for 7.934)
+2024-07-18 15:43:19 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-18 15:43:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-18 15:43:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-18 15:43:26 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 15:43:26 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:16:39 [http-nio-8080-exec-10] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:16:39 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:21:20 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:22:19 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:22:22 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:22:26 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:22:37 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:22:37 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:29:53 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:29:53 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:30:33 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 17:30:33 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-18 20:55:21 [http-nio-8080-exec-2] ERROR c.e.s.s.j.f.JwtAuthenticationFilter - EXPIRED Token // token : eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b29zaGluQHZsdi5jby5rciIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJtZW1iZXJJZCI6MywibmFtZSI6IuycoOqwkyIsImlhdCI6MTcyMTI5MTcyMywiZXhwIjoxNzIxMjkzNTIzfQ.R3fKYx4PnWBWD3YXBG-8M01ZBW_8-G1QoWLPHXOLRoZSuAs7uDKwcHv1jyaV1tgr
+2024-07-18 20:55:21 [http-nio-8080-exec-1] ERROR c.e.s.s.j.f.JwtAuthenticationFilter - EXPIRED Token // token : eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b29zaGluQHZsdi5jby5rciIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJtZW1iZXJJZCI6MywibmFtZSI6IuycoOqwkyIsImlhdCI6MTcyMTI5MTcyMywiZXhwIjoxNzIxMjkzNTIzfQ.R3fKYx4PnWBWD3YXBG-8M01ZBW_8-G1QoWLPHXOLRoZSuAs7uDKwcHv1jyaV1tgr
+2024-07-18 20:55:21 [http-nio-8080-exec-2] ERROR c.e.s.s.j.f.JwtAuthenticationFilter - Set Request Exception Code : EXPIRED_TOKEN
+2024-07-18 20:55:21 [http-nio-8080-exec-1] ERROR c.e.s.s.j.f.JwtAuthenticationFilter - Set Request Exception Code : EXPIRED_TOKEN
+2024-07-18 20:55:21 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.authentication.BadCredentialsException: throw new expired token exception
+	at com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-18 20:55:21 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.authentication.BadCredentialsException: throw new expired token exception
+	at com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-18 20:55:21 [http-nio-8080-exec-1] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - Commence Get Exception : EXPIRED_TOKEN
+2024-07-18 20:55:21 [http-nio-8080-exec-2] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - Commence Get Exception : EXPIRED_TOKEN
+2024-07-18 20:55:21 [http-nio-8080-exec-1] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - entry point >> not found token
+2024-07-18 20:55:21 [http-nio-8080-exec-2] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - entry point >> not found token
+2024-07-18 20:55:21 [http-nio-8080-exec-1] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - entry point >> expired token
+2024-07-18 20:55:21 [http-nio-8080-exec-2] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - entry point >> expired token
+2024-07-19 08:44:48 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15h9m34s524ms215µs100ns).
+2024-07-19 09:03:50 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:03:50 [http-nio-8080-exec-3] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:21:03 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:21:03 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:29:11 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:29:11 [http-nio-8080-exec-3] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:29:54 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:29:54 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:34:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 09:34:29 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 19644 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 09:34:29 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 09:34:29 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 09:34:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 09:34:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 09:34:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 09:34:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135 ms. Found 9 JPA repository interfaces.
+2024-07-19 09:34:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 09:34:31 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 09:34:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 09:34:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 09:34:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 09:34:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2709 ms
+2024-07-19 09:34:32 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 09:34:32 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 09:34:32 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 09:34:32 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 09:34:32 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 09:34:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 09:34:33 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59295ff5
+2024-07-19 09:34:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 09:34:33 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 09:34:33 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 09:34:34 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 09:34:35 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 09:34:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 09:34:36 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c1e51d8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c0473c1, org.springframework.security.web.context.SecurityContextHolderFilter@38e10fcd, org.springframework.security.web.header.HeaderWriterFilter@ff6da15, org.springframework.web.filter.CorsFilter@64d508c4, org.springframework.security.web.authentication.logout.LogoutFilter@4e7b58f, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@4a860c2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48444917, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@585d2ccf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64b81435, org.springframework.security.web.session.SessionManagementFilter@1a973f19, org.springframework.security.web.access.ExceptionTranslationFilter@2fe3fe0a, org.springframework.security.web.access.intercept.AuthorizationFilter@16c8d386]
+2024-07-19 09:34:37 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 09:34:37 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 09:34:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 09:34:37 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 8.834 seconds (process running for 9.634)
+2024-07-19 09:34:50 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 09:34:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 09:34:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 09:35:21 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:35:21 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:40:50 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:40:50 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:43:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 09:43:29 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 37280 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 09:43:29 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 09:43:29 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 09:43:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 09:43:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 09:43:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 09:43:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 9 JPA repository interfaces.
+2024-07-19 09:43:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 09:43:31 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 09:43:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 09:43:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 09:43:31 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 09:43:31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2654 ms
+2024-07-19 09:43:32 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 09:43:32 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 09:43:32 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 09:43:32 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 09:43:32 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 09:43:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 09:43:33 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e6396f4
+2024-07-19 09:43:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 09:43:33 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 09:43:33 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 09:43:34 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 09:43:34 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 09:43:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 09:43:36 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ed56bb0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76e6792b, org.springframework.security.web.context.SecurityContextHolderFilter@421c7310, org.springframework.security.web.header.HeaderWriterFilter@21f76ce1, org.springframework.web.filter.CorsFilter@20d75491, org.springframework.security.web.authentication.logout.LogoutFilter@278f7b16, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@63ef1f19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53aeda2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4009d63b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66e2703f, org.springframework.security.web.session.SessionManagementFilter@6095e23e, org.springframework.security.web.access.ExceptionTranslationFilter@f9c7513, org.springframework.security.web.access.intercept.AuthorizationFilter@6badf918]
+2024-07-19 09:43:36 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 09:43:36 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 09:43:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 09:43:37 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 8.291 seconds (process running for 9.092)
+2024-07-19 09:43:57 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 09:43:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 09:43:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 09:43:59 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:43:59 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:47:33 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:47:33 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:47:58 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:47:58 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:57:51 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:57:51 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:59:47 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 09:59:47 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:02:29 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:02:29 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:09:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 10:09:08 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 25292 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 10:09:08 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 10:09:08 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 10:09:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 10:09:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 10:09:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 10:09:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 9 JPA repository interfaces.
+2024-07-19 10:09:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 10:09:10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:09:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 10:09:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 10:09:10 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 10:09:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2222 ms
+2024-07-19 10:09:11 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 10:09:11 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 10:09:11 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 10:09:11 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:09:11 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 10:09:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 10:09:12 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e6396f4
+2024-07-19 10:09:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 10:09:12 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 10:09:12 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:09:13 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 10:09:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 10:09:14 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 10:09:15 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@95dd17, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c1e51d8, org.springframework.security.web.context.SecurityContextHolderFilter@3664cdb5, org.springframework.security.web.header.HeaderWriterFilter@15d0052b, org.springframework.web.filter.CorsFilter@2c0473c1, org.springframework.security.web.authentication.logout.LogoutFilter@e3eacb2, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@64d508c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b2d903f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48444917, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a860c2c, org.springframework.security.web.session.SessionManagementFilter@2a3497fb, org.springframework.security.web.access.ExceptionTranslationFilter@72fae3ab, org.springframework.security.web.access.intercept.AuthorizationFilter@44f3f66]
+2024-07-19 10:09:15 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 10:09:15 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:09:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 10:09:15 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.26 seconds (process running for 8.214)
+2024-07-19 10:09:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 10:09:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 10:09:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 10:09:39 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:09:39 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:12:06 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:12:06 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:12:26 [http-nio-8080-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1146, SQLState: 42S02
+2024-07-19 10:12:26 [http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Table 'examplesdb.paymentinfo' doesn't exist
+2024-07-19 10:12:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 10:12:45 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 11704 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 10:12:45 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 10:12:45 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 10:12:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 10:12:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 10:12:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 10:12:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 9 JPA repository interfaces.
+2024-07-19 10:12:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 10:12:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:12:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 10:12:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 10:12:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 10:12:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2041 ms
+2024-07-19 10:12:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 10:12:47 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 10:12:47 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 10:12:47 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:12:47 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 10:12:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 10:12:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@519d90a8
+2024-07-19 10:12:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 10:12:48 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 10:12:48 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:12:49 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 10:12:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 10:12:50 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 10:12:50 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@78a7e94b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e9cd06e, org.springframework.security.web.context.SecurityContextHolderFilter@468651b3, org.springframework.security.web.header.HeaderWriterFilter@7d66d41c, org.springframework.web.filter.CorsFilter@30f26376, org.springframework.security.web.authentication.logout.LogoutFilter@23fbce38, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@62f96152, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58fdb3ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5193e7cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25d331f7, org.springframework.security.web.session.SessionManagementFilter@20c2605b, org.springframework.security.web.access.ExceptionTranslationFilter@20b53c28, org.springframework.security.web.access.intercept.AuthorizationFilter@64aee4f3]
+2024-07-19 10:12:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 10:12:51 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:12:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 10:12:51 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 6.786 seconds (process running for 7.471)
+2024-07-19 10:13:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 10:13:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 10:13:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 10:13:24 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:13:24 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:20:40 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:20:40 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:24:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 10:24:44 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 44720 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 10:24:44 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 10:24:44 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 10:24:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 10:24:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 10:24:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 10:24:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 9 JPA repository interfaces.
+2024-07-19 10:24:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 10:24:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:24:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 10:24:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 10:24:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 10:24:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2488 ms
+2024-07-19 10:24:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 10:24:47 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 10:24:47 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 10:24:47 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:24:48 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 10:24:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 10:24:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e6396f4
+2024-07-19 10:24:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 10:24:48 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 10:24:48 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:24:49 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 10:24:50 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 10:24:50 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 10:24:51 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@284e14bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44c244b2, org.springframework.security.web.context.SecurityContextHolderFilter@6095e23e, org.springframework.security.web.header.HeaderWriterFilter@67f95dc3, org.springframework.web.filter.CorsFilter@335e04a6, org.springframework.security.web.authentication.logout.LogoutFilter@1f091c32, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@2ed56bb0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27668a57, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@421c7310, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76e6792b, org.springframework.security.web.session.SessionManagementFilter@243f3360, org.springframework.security.web.access.ExceptionTranslationFilter@3ab2275f, org.springframework.security.web.access.intercept.AuthorizationFilter@64d508c4]
+2024-07-19 10:24:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 10:24:51 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:24:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 10:24:51 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.355 seconds (process running for 8.101)
+2024-07-19 10:24:51 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 10:24:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 10:24:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 10:26:22 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:26:22 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:28:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 10:28:02 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 28532 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 10:28:02 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 10:28:02 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 10:28:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 10:28:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 10:28:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 10:28:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 9 JPA repository interfaces.
+2024-07-19 10:28:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 10:28:05 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:28:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 10:28:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 10:28:05 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 10:28:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2411 ms
+2024-07-19 10:28:05 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 10:28:05 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 10:28:05 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 10:28:05 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:28:05 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 10:28:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 10:28:06 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49782e38
+2024-07-19 10:28:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 10:28:06 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 10:28:07 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:28:08 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 10:28:08 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 10:28:09 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 10:28:09 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47525747, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37164a92, org.springframework.security.web.context.SecurityContextHolderFilter@23fbce38, org.springframework.security.web.header.HeaderWriterFilter@2b053533, org.springframework.web.filter.CorsFilter@4c631ef3, org.springframework.security.web.authentication.logout.LogoutFilter@27d4b6ec, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@3158ded2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ea1ac2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@722b4855, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64654fd1, org.springframework.security.web.session.SessionManagementFilter@4dadd957, org.springframework.security.web.access.ExceptionTranslationFilter@759dd7a8, org.springframework.security.web.access.intercept.AuthorizationFilter@62f8aaae]
+2024-07-19 10:28:09 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 10:28:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:28:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 10:28:09 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.438 seconds (process running for 8.135)
+2024-07-19 10:28:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 10:28:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 10:28:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 10:28:24 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:28:24 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:29:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 10:29:50 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 21548 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 10:29:50 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 10:29:50 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 10:29:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 10:29:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 10:29:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 10:29:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 9 JPA repository interfaces.
+2024-07-19 10:29:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 10:29:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:29:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 10:29:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 10:29:52 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 10:29:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2123 ms
+2024-07-19 10:29:52 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 10:29:52 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 10:29:52 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 10:29:52 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:29:53 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 10:29:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 10:29:53 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e6396f4
+2024-07-19 10:29:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 10:29:53 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 10:29:53 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:29:54 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 10:29:54 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 10:29:55 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 10:29:56 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ba26772, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@95dd17, org.springframework.security.web.context.SecurityContextHolderFilter@f7b983d, org.springframework.security.web.header.HeaderWriterFilter@2fe3fe0a, org.springframework.web.filter.CorsFilter@5c1e51d8, org.springframework.security.web.authentication.logout.LogoutFilter@3f2dbaaf, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@2c0473c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38e10fcd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b2d903f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64d508c4, org.springframework.security.web.session.SessionManagementFilter@ff6da15, org.springframework.security.web.access.ExceptionTranslationFilter@20f75975, org.springframework.security.web.access.intercept.AuthorizationFilter@2555293d]
+2024-07-19 10:29:56 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 10:29:56 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:29:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 10:29:56 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 6.529 seconds (process running for 7.229)
+2024-07-19 10:29:57 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 10:29:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 10:29:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 10:30:01 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:30:01 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:31:27 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:31:27 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:33:19 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 10:33:19 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 38188 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 10:33:19 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 10:33:19 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 10:33:19 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 10:33:19 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 10:33:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 10:33:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 9 JPA repository interfaces.
+2024-07-19 10:33:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 10:33:21 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:33:21 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 10:33:21 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 10:33:21 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 10:33:21 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2427 ms
+2024-07-19 10:33:22 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 10:33:22 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 10:33:22 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 10:33:22 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:33:22 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 10:33:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 10:33:22 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@374a89eb
+2024-07-19 10:33:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 10:33:22 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 10:33:23 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:33:24 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 10:33:24 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 10:33:25 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 10:33:25 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@230862e9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39e1c9c5, org.springframework.security.web.context.SecurityContextHolderFilter@53a21c96, org.springframework.security.web.header.HeaderWriterFilter@67f95dc3, org.springframework.web.filter.CorsFilter@22ed1e37, org.springframework.security.web.authentication.logout.LogoutFilter@2c0473c1, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@577be1dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78ce53a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c285f10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3704def1, org.springframework.security.web.session.SessionManagementFilter@243f3360, org.springframework.security.web.access.ExceptionTranslationFilter@3ab2275f, org.springframework.security.web.access.intercept.AuthorizationFilter@4888fb60]
+2024-07-19 10:33:25 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 10:33:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:33:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 10:33:26 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.305 seconds (process running for 8.09)
+2024-07-19 10:33:39 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 10:33:39 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 10:33:39 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-07-19 10:33:51 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:33:51 [http-nio-8080-exec-3] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:33:52 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:33:52 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:42:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 10:42:50 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 14744 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 10:42:50 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 10:42:50 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 10:42:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 10:42:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 10:42:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 10:42:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 9 JPA repository interfaces.
+2024-07-19 10:42:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 10:42:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:42:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 10:42:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 10:42:52 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 10:42:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2246 ms
+2024-07-19 10:42:52 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 10:42:52 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 10:42:52 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 10:42:53 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:42:53 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 10:42:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 10:42:53 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a2606b2
+2024-07-19 10:42:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 10:42:53 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 10:42:54 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:42:55 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 10:42:55 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 10:42:56 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 10:42:56 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f091c32, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38626b66, org.springframework.security.web.context.SecurityContextHolderFilter@2fe3fe0a, org.springframework.security.web.header.HeaderWriterFilter@61967931, org.springframework.web.filter.CorsFilter@6a063d4c, org.springframework.security.web.authentication.logout.LogoutFilter@61acb9d9, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@278f7b16, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ff6da15, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a3497fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70b00b59, org.springframework.security.web.session.SessionManagementFilter@3bb0373a, org.springframework.security.web.access.ExceptionTranslationFilter@59ae61ad, org.springframework.security.web.access.intercept.AuthorizationFilter@68a387f0]
+2024-07-19 10:42:56 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 10:42:56 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:42:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 10:42:56 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 6.796 seconds (process running for 7.517)
+2024-07-19 10:43:04 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 10:43:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 10:43:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 10:43:05 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:43:05 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:43:06 [http-nio-8080-exec-3] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:43:06 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:44:36 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 10:44:36 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 40324 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 10:44:36 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 10:44:36 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 10:44:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 10:44:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 10:44:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 10:44:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 9 JPA repository interfaces.
+2024-07-19 10:44:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 10:44:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:44:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 10:44:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 10:44:38 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 10:44:38 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2505 ms
+2024-07-19 10:44:39 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 10:44:39 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 10:44:39 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 10:44:39 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:44:39 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 10:44:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 10:44:40 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e6396f4
+2024-07-19 10:44:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 10:44:40 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 10:44:40 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 10:44:41 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 10:44:41 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 10:44:42 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 10:44:43 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3415371a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3885fc64, org.springframework.security.web.context.SecurityContextHolderFilter@61967931, org.springframework.security.web.header.HeaderWriterFilter@55f63915, org.springframework.web.filter.CorsFilter@45cc401d, org.springframework.security.web.authentication.logout.LogoutFilter@27668a57, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@15c8efc1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3bb0373a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20f75975, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@878b785, org.springframework.security.web.session.SessionManagementFilter@6ab34d8f, org.springframework.security.web.access.ExceptionTranslationFilter@429c33d8, org.springframework.security.web.access.intercept.AuthorizationFilter@7c285f10]
+2024-07-19 10:44:43 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 10:44:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 10:44:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 10:44:43 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.735 seconds (process running for 8.523)
+2024-07-19 10:44:49 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 10:44:49 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 10:44:49 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-19 10:44:49 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:44:49 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:46:37 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:46:37 [http-nio-8080-exec-10] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:46:43 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:46:43 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:46:58 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:46:58 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:47:05 [http-nio-8080-exec-9] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:47:05 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:47:10 [http-nio-8080-exec-7] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:47:10 [http-nio-8080-exec-8] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:47:23 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 10:47:23 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 11:05:49 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 11:05:49 [http-nio-8080-exec-3] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 11:06:04 [http-nio-8080-exec-2] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 11:06:04 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:22:55 [http-nio-8080-exec-9] ERROR c.e.s.s.j.f.JwtAuthenticationFilter - EXPIRED Token // token : eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b29zaGluQHZsdi5jby5rciIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJtZW1iZXJJZCI6MywibmFtZSI6IuycoOqwkyIsImlhdCI6MTcyMTM1NDc1OSwiZXhwIjoxNzIxMzU2NTU5fQ.V57tB-D_-tsdhbNtkyxJTgBuASJsmXMEWbt_fdjgRxMPJ56XXTaGzMYw33EZj2eF
+2024-07-19 13:22:55 [http-nio-8080-exec-9] ERROR c.e.s.s.j.f.JwtAuthenticationFilter - Set Request Exception Code : EXPIRED_TOKEN
+2024-07-19 13:22:55 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.authentication.BadCredentialsException: throw new expired token exception
+	at com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-07-19 13:22:55 [http-nio-8080-exec-9] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - Commence Get Exception : EXPIRED_TOKEN
+2024-07-19 13:22:55 [http-nio-8080-exec-9] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - entry point >> not found token
+2024-07-19 13:22:55 [http-nio-8080-exec-9] ERROR c.e.s.s.j.e.CustomAuthenticationEntryPoint - entry point >> expired token
+2024-07-19 13:22:59 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:22:59 [http-nio-8080-exec-10] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:23:04 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:23:04 [http-nio-8080-exec-3] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:23:15 [http-nio-8080-exec-1] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:23:15 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:23:32 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:23:32 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:23:46 [http-nio-8080-exec-4] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:23:46 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:42:42 [http-nio-8080-exec-6] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 13:42:42 [http-nio-8080-exec-10] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 14:20:09 [http-nio-8080-exec-5] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 14:20:10 [http-nio-8080-exec-3] INFO  c.e.s.controller.AddressController - Fetched addresses: [Address{id=8, postalCode='63308', address='제주특별자치도 제주시 구릉동산길 13 303호', recipientName='동동', recipientPhone='010-3333-3333'}, Address{id=15, postalCode='32563', address='충남 공주시 고상아리1길 4 2층', recipientName='아리', recipientPhone='010-2222-2222'}, Address{id=20, postalCode='15616', address='경기 안산시 단원구 첨단로 7', recipientName='테스트다', recipientPhone='010-5454-5555'}]
+2024-07-19 14:38:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-07-19 14:38:38 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Starting ShopapiApplication using Java 18.0.2.1 with PID 43880 (C:\Users\rhdtj\Desktop\share\fakeshop\shopapi\build\classes\java\main started by user in C:\Users\rhdtj\Desktop\share\fakeshop\shopapi)
+2024-07-19 14:38:38 [restartedMain] DEBUG c.example.shopapi.ShopapiApplication - Running with Spring Boot v3.1.1, Spring v6.0.10
+2024-07-19 14:38:38 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-19 14:38:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-19 14:38:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-19 14:38:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-19 14:38:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 9 JPA repository interfaces.
+2024-07-19 14:38:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-19 14:38:40 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-07-19 14:38:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-19 14:38:40 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-07-19 14:38:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-19 14:38:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2416 ms
+2024-07-19 14:38:41 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-19 14:38:41 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-07-19 14:38:41 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-07-19 14:38:41 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 14:38:41 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-19 14:38:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-19 14:38:42 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a2606b2
+2024-07-19 14:38:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-19 14:38:42 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-19 14:38:42 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-07-19 14:38:43 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-19 14:38:43 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-19 14:38:44 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-19 14:38:45 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f091c32, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38626b66, org.springframework.security.web.context.SecurityContextHolderFilter@2fe3fe0a, org.springframework.security.web.header.HeaderWriterFilter@61967931, org.springframework.web.filter.CorsFilter@6a063d4c, org.springframework.security.web.authentication.logout.LogoutFilter@61acb9d9, com.example.shopapi.security.jwt.filter.JwtAuthenticationFilter@278f7b16, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ff6da15, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a3497fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70b00b59, org.springframework.security.web.session.SessionManagementFilter@3bb0373a, org.springframework.security.web.access.ExceptionTranslationFilter@59ae61ad, org.springframework.security.web.access.intercept.AuthorizationFilter@68a387f0]
+2024-07-19 14:38:45 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-19 14:38:45 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-07-19 14:38:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-19 14:38:45 [restartedMain] INFO  c.example.shopapi.ShopapiApplication - Started ShopapiApplication in 7.658 seconds (process running for 8.541)
+2024-07-19 14:38:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-19 14:38:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-19 14:38:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
