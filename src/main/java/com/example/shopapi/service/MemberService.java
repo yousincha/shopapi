@@ -1,6 +1,8 @@
 package com.example.shopapi.service;
 
 import com.example.shopapi.dto.MemberUpdateDto;
+import com.example.shopapi.repository.AddressRepository;
+import com.example.shopapi.repository.CartRepository;
 import com.sun.tools.jconsole.JConsoleContext;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -28,6 +30,8 @@ public class MemberService {
     private final MemberRepository memberRepository;
     private final RoleRepository roleRepository;
     private final JavaMailSender mailSender;
+    private final CartRepository cartRepository;
+    private final AddressRepository addressRepository;
 
     @Value("${spring.mail.username}")
     private String username;
@@ -116,5 +120,17 @@ public class MemberService {
         member.setGender(memberUpdateDto.getGender());
         return memberRepository.save(member);
     }
+    @Transactional
+    public void deleteMember(Long id) {// ID가 존재하지 않을 경우 예외를 던지는 등의 처리를 추가할 수 있습니다.
+        if (!memberRepository.existsById(id)) {
+            throw new IllegalArgumentException("Member with id " + id + " does not exist.");
+        }
+        // 회원이 존재하는지 확인합니다.
+        Member member = memberRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Member not found"));
 
+        cartRepository.deleteByMemberId(id);
+        addressRepository.deleteByMemberId(id);
+        // 회원 삭제
+        memberRepository.delete(member);
+    }
 }

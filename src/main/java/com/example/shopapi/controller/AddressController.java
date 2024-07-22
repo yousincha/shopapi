@@ -33,11 +33,11 @@ public class AddressController {
         }
     }
 
-    @GetMapping
-    public ResponseEntity<List<Address>> getAddressList() {
+    @GetMapping("/{memberId}")
+    public ResponseEntity<List<Address>> getAddressList(@PathVariable Long memberId) {
         try {
-            List<Address> addresses = addressRepository.findAll();
-            logger.info("Fetched addresses: {}", addresses); // 로그 추가
+            List<Address> addresses = addressRepository.findByMemberId(memberId);
+            logger.info("Fetched addresses for member {}: {}", memberId, addresses); // 로그 추가
             return ResponseEntity.ok(addresses);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);

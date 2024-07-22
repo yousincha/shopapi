@@ -211,6 +211,21 @@ public class MemberController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteMember(@PathVariable Long id) {
+        try {
+            memberService.deleteMember(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (IllegalArgumentException e) {
+            // IllegalArgumentException이 발생한 경우
+            return new ResponseEntity<>("Invalid argument: " + e.getMessage(), HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            // 일반적인 예외 처리
+            e.printStackTrace(); // 예외 스택 트레이스를 콘솔에 출력
+            return new ResponseEntity<>("Internal server error: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
     private boolean isValidResetToken(String resetToken) {
         Optional<Member> memberOptional = memberService.findByResetToken(resetToken);
         // 실제 구현에서는 토큰의 유효성을 데이터베이스에서 확인해야 합니다.
