@@ -1,2 +1,15 @@
-package com.example.shopapi.dto;public class AdminLoginResponseDto {
+package com.example.shopapi.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class AdminLoginResponseDto {
+    private String email;
+    private String role;
 }
