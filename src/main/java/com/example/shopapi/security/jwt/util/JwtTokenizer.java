@@ -27,27 +27,44 @@ public class JwtTokenizer {
         this.refreshSecret = refreshSecret.getBytes(StandardCharsets.UTF_8);
     }
 
-    /**
-     * AccessToken 생성
-     */
-    public String createAccessToken(Long id, String email, String name, List<String> roles) {
-        return createToken(id, email, name, roles, ACCESS_TOKEN_EXPIRE_COUNT, accessSecret);
+    // Methods for creating tokens for members
+    public String createMemberAccessToken(Long memberId, String email, String name, List<String> roles) {
+        return createToken(memberId, email, name, roles, ACCESS_TOKEN_EXPIRE_COUNT, accessSecret, "memberId");
     }
 
-    /**
-     * RefreshToken 생성
-     */
-    public String createRefreshToken(Long id, String email, String name, List<String> roles) {
-        return createToken(id, email, name, roles, REFRESH_TOKEN_EXPIRE_COUNT, refreshSecret);
+    public String createMemberRefreshToken(Long memberId, String email, String name, List<String> roles) {
+        return createToken(memberId, email, name, roles, REFRESH_TOKEN_EXPIRE_COUNT, refreshSecret, "memberId");
     }
 
+    // Methods for creating tokens for admins
+    public String createAdminAccessToken(Long adminId, String email, List<String> roles) {
+        return createToken(adminId, email, roles, ACCESS_TOKEN_EXPIRE_COUNT, accessSecret, "adminId");
+    }
+
+    public String createAdminRefreshToken(Long adminId, String email, List<String> roles) {
+        return createToken(adminId, email, roles, REFRESH_TOKEN_EXPIRE_COUNT, refreshSecret, "adminId");
+    }
+
+    // Overloaded method for cases where name is not required
+    private String createToken(Long id, String email, List<String> roles,
+                               Long expire, byte[] secretKey, String idClaim) {
+        Claims claims = Jwts.claims().setSubject(email);
+        claims.put("roles", roles);
+        claims.put(idClaim, id);
+
+        return Jwts.builder()
+                .setClaims(claims)
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(new Date().getTime() + expire))
+                .signWith(getSigningKey(secretKey))
+                .compact();
+    }
 
     private String createToken(Long id, String email, String name, List<String> roles,
-                               Long expire, byte[] secretKey) {
+                               Long expire, byte[] secretKey, String idClaim) {
         Claims claims = Jwts.claims().setSubject(email);
-
         claims.put("roles", roles);
-        claims.put("memberId", id);
+        claims.put(idClaim, id);
         claims.put("name", name);
 
         return Jwts.builder()
@@ -58,14 +75,18 @@ public class JwtTokenizer {
                 .compact();
     }
 
-    /**
-     * 토큰에서 유저 아이디 얻기
-     */
+    // Methods to extract member and admin IDs from token
     public Long getMemberIdFromToken(String token) {
-        String[] tokenArr = token.split(" ");
-        token = tokenArr[1];
-        Claims claims = parseToken(token, accessSecret);
-        return Long.valueOf((Integer)claims.get("memberId"));
+        return getIdFromToken(token, "memberId", accessSecret);
+    }
+
+    public Long getAdminIdFromToken(String token) {
+        return getIdFromToken(token, "adminId", accessSecret);
+    }
+
+    private Long getIdFromToken(String token, String idClaim, byte[] secretKey) {
+        Claims claims = parseToken(token, secretKey);
+        return claims.get(idClaim, Long.class);
     }
 
     public Claims parseAccessToken(String accessToken) {
@@ -76,8 +97,7 @@ public class JwtTokenizer {
         return parseToken(refreshToken, refreshSecret);
     }
 
-
-    public Claims parseToken(String token, byte[] secretKey) {
+    private Claims parseToken(String token, byte[] secretKey) {
         return Jwts.parserBuilder()
                 .setSigningKey(getSigningKey(secretKey))
                 .build()
@@ -85,12 +105,7 @@ public class JwtTokenizer {
                 .getBody();
     }
 
-    /**
-     * @param secretKey - byte형식
-     * @return Key 형식 시크릿 키
-     */
     public static Key getSigningKey(byte[] secretKey) {
         return Keys.hmacShaKeyFor(secretKey);
     }
-
 }

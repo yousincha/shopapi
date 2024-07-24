@@ -1,15 +1,16 @@
 package com.example.shopapi.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor // 모든 필드를 포함하는 생성자 추가
+@Builder
 public class AdminLoginResponseDto {
-    private String email;
-    private String role;
+    private String accessToken;
+    private String refreshToken;
+    private Long adminId;
+
 }

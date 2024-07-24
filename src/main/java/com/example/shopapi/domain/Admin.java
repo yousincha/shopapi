@@ -1,53 +1,58 @@
 package com.example.shopapi.domain;
 
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
+@Table(name="admin")
+@NoArgsConstructor
+@Setter
+@Getter
 public class Admin {
 
     @Id
+    @Column(name = "admin_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long adminId;
 
-    @Column(nullable = false, unique = true)
+    @Column(length = 255, unique = true)
     private String email;
 
-    @Column(nullable = false)
+    @JsonIgnore
+    @Column(length = 500)
     private String password;
 
-    // 기본 생성자
-    public Admin() {
-    }
+    @Column(name = "reset_token")
+    private String resetToken;
 
-    // 이메일과 비밀번호를 인자로 받는 생성자
-    public Admin(String email, String password) {
-        this.email = email;
-        this.password = password;
-    }
+    @Column(name = "reset_token_creation_time")
+    private LocalDateTime resetTokenCreationTime;
 
-    // Getter 및 Setter 메소드
-    public Long getId() {
-        return id;
-    }
+    @ManyToMany
+    @JoinTable(name = "admin_role",
+            joinColumns = @JoinColumn(name = "admin_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles = new HashSet<>();
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
-    public String getEmail() {
-        return email;
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "adminId=" + adminId +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", resetToken='" + resetToken + '\'' +
+                '}';
     }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    // 역할 추가 메서드
+    public void addRole(Role role) {
+        this.roles.add(role);
     }
 }

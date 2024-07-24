@@ -16,4 +16,8 @@ public class RefreshToken {
     private Long id;
     private Long memberId;
     private String value;
+
+
+    public void setAdminId(Long adminId) {
+    }
 }
