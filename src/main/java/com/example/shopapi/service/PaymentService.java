@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
+import java.util.List;
 
 import java.util.Map;
 
@@ -55,6 +56,15 @@ public class PaymentService {
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error while verifying payment");
+        }
+    }
+    public ResponseEntity<?> getAllPaymentsInfos() {
+        try {
+            List<PaymentInfo> paymentInfos = paymentInfoRepository.findAll();
+            return ResponseEntity.ok(paymentInfos);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error while fetching payment infos");
         }
     }
 }

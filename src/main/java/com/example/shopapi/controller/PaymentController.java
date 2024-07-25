@@ -20,4 +20,9 @@ public class PaymentController {
         System.out.println("Request Params: " + params);
         return paymentService.verifyIamportPayment(impUid, params);
     }
+    @GetMapping
+    public ResponseEntity<?> getAllPaymentsInfos() {
+        return paymentService.getAllPaymentsInfos();
+    }
+
 }
