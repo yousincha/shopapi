@@ -110,8 +110,8 @@ public class AdminController {
 
         AdminLoginResponseDto loginResponse = AdminLoginResponseDto.builder()
                 .accessToken(accessToken)
-                .refreshToken(tokenValue) // 기존의 refreshToken 값을 사용
-                .adminId (admin.getAdminId()) // 또는 adminId
+                .refreshToken(tokenValue)
+                .adminId(admin.getAdminId())
                 .build();
         return ResponseEntity.ok(loginResponse);
     }
