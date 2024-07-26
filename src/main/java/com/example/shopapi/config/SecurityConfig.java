@@ -58,6 +58,7 @@ public class SecurityConfig {
         config.setAllowCredentials(true); // 이거 빼면 된다
 
         config.addAllowedOrigin("http://localhost:3000");
+        config.addAllowedOrigin("http://localhost:3001");
         config.addAllowedHeader("Content-Type");
         config.addAllowedHeader("Authorization");
         config.addAllowedHeader("x-refresh-token"); // 추가된 부분
