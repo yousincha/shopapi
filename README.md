@@ -99,7 +99,7 @@ cd <프로젝트 디렉토리>
 이 명령어는 프로젝트에 필요한 모든 종속성을 다운로드하고, 프로젝트를 빌드합니다.
 
 # 데이터베이스 설정
-src/main/resources/application.properties 또는 application.yml 파일에서 데이터베이스 설정을 구성합니다. 예를 들어:
+src/main/resources/application.properties 또는 application.yml 파일에서 데이터베이스 설정을 구성합니다.
 ```bash
 # key? 32byte (256bit)
 jwt:
